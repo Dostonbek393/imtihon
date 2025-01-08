@@ -33,10 +33,13 @@ img {
 }
 
 body {
+  font-family: "Jost";
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow-x: hidden;
+  background-color: $white;
+  color: $black;
 }
 
 main {
@@ -45,10 +48,24 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1111px; /* you need change it  */
+  max-width: 1111px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
