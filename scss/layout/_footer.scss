@@ -1,0 +1,68 @@
+.footer {
+  background-color: $black;
+  color: $light-grey;
+}
+.footer__container {
+}
+
+.footer__item {
+  margin-top: 14.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid $white;
+  margin-bottom: 3.1rem;
+}
+
+.footer__title {
+}
+.footer__text {
+  color: $white;
+  @include typography(1.4rem, 1.6, 0rem);
+  margin-left: 4rem;
+}
+
+.footer__text:hover {
+  color: $peach;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contact {
+  @include typography(1.6rem, 1.5, 0rem);
+  width: 19rem;
+}
+
+.footer__contacts {
+  @include typography(1.6rem, 1.5, 0rem);
+  width: 19rem;
+}
+
+.footer__images {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 4rem;
+}
+
+.footer__image-contact {
+  margin-bottom: 7.2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .footer__item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+  }
+
+  .footer__items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+}

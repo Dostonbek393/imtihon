@@ -1,0 +1,24 @@
+@mixin typography($size, $line-height, $letter-spacing) {
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+// Headings
+.Headings {
+  @include typography(4.4rem, 1.2, -0.2rem);
+}
+
+.Headings-one {
+  @include typography(2.4rem, 1.4, -0.1rem);
+}
+
+// Paragraphs
+.Paragraphs {
+  @include typography(1.4rem, 1.6, 0rem);
+}
+
+// Buttons
+.Buttons {
+  @include typography(1.6rem, 1.5, 0rem);
+}
