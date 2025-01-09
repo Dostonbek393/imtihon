@@ -1,3 +1,21 @@
+.section {
+  background-image: url("../../images/bg-pattern-leaf.svg");
+  background-position: top 40rem left;
+  background-repeat: no-repeat;
+}
+
+.sections {
+  background-image: url("../../images/Rectangle\ Copy\ 4.svg");
+  background-repeat: no-repeat;
+  background-position: top 10rem right;
+}
+
+.sectionss {
+  background-image: url("../../images/bg-pattern-leaf.svg");
+  background-position: top 15rem left;
+  background-repeat: no-repeat;
+}
+
 .frame {
   &__one {
     background-image: url("../../images/image-hero-phone.png"),
@@ -422,14 +440,14 @@
     width: 25rem;
   }
 
-  &__item-content:hover {
+  .express__item-content:hover {
     background-color: $peach;
 
-    &__title {
+    .express__title {
       color: $white;
     }
 
-    &__text {
+    .express__text {
       color: $white;
     }
   }
@@ -576,8 +594,7 @@
     gap: 3rem;
     margin-bottom: 16rem;
   }
-  &__content {
-  }
+
   &__image {
     display: flex;
     border-radius: 1.5rem 1.5rem 0 0;
@@ -609,11 +626,11 @@
   &__item-content:hover {
     background-color: $peach;
 
-    &__title {
+    .app__title {
       color: $white;
     }
 
-    &__text {
+    .app__text {
       color: $white;
     }
   }
@@ -1075,6 +1092,7 @@
     color: $black;
     border-radius: 1.5rem;
   }
+
   &__text {
     color: $peach;
     margin-bottom: 2.4rem;
@@ -1101,6 +1119,13 @@
     background-color: rgba(253, 243, 240, 1);
     padding-top: 8.8rem;
     padding-left: 9.5rem;
+
+    &:active {
+      background-image: linear-gradient(
+        rgba(231, 129, 107, 0.8),
+        rgba(231, 129, 107, 0.8)
+      );
+    }
   }
 
   &__title:nth-child(2) {
@@ -1118,6 +1143,13 @@
     background-color: rgba(253, 243, 240, 1);
     padding-top: 8.8rem;
     padding-left: 9.5rem;
+
+    &:active {
+      background-image: linear-gradient(
+        rgba(231, 129, 107, 0.8),
+        rgba(231, 129, 107, 0.8)
+      );
+    }
   }
 
   &__title:nth-child(5) {
@@ -1127,6 +1159,13 @@
     background-color: rgba(253, 243, 240, 1);
     padding-top: 8.8rem;
     padding-left: 9.5rem;
+
+    &:active {
+      background-image: linear-gradient(
+        rgba(231, 129, 107, 0.8),
+        rgba(231, 129, 107, 0.8)
+      );
+    }
   }
 
   &__title:nth-child(6) {
@@ -1304,6 +1343,18 @@
     opacity: 1;
   }
 
+  &__item:active {
+    background-image: url("../../images/icon-error.svg");
+    background-position: bottom 1rem right;
+    background-repeat: no-repeat;
+  }
+
+  &__items:active {
+    background-image: url("../../images/icon-error.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
   &__items:hover {
     border-color: rgba(255, 255, 255, 1);
     border-bottom: 3px solid rgba(255, 255, 255, 1);
@@ -1364,9 +1415,6 @@
     width: 32.7rem;
     text-align: center;
     padding-right: 6rem;
-  }
-
-  .submit__contact {
   }
 
   .submit__item {
