@@ -422,14 +422,14 @@
     width: 25rem;
   }
 
-  &__item-content:hover {
+  .express__item-content:hover {
     background-color: $peach;
 
-    &__title {
+    .express__title {
       color: $white;
     }
 
-    &__text {
+    .express__text {
       color: $white;
     }
   }
@@ -609,11 +609,11 @@
   &__item-content:hover {
     background-color: $peach;
 
-    &__title {
+    .app__title {
       color: $white;
     }
 
-    &__text {
+    .app__text {
       color: $white;
     }
   }
