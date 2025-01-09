@@ -1,25 +1,20 @@
 .header {
   margin-top: 6.4rem;
   margin-bottom: 6.7rem;
-}
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header__imge {
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.header__title {
-}
+  &__text {
+    color: $black;
+    margin-left: 4.2rem;
+    @include typography(1.4rem, 1.6, 0rem);
+  }
 
-.header__text {
-  color: $black;
-  margin-left: 4.2rem;
-  @include typography(1.4rem, 1.6, 0rem);
-}
-
-.header__text:hover {
-  color: $peach;
+  &__text:hover {
+    color: $peach;
+  }
 }
