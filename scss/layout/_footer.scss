@@ -11,8 +11,6 @@
     margin-bottom: 3.1rem;
   }
 
-  &__title {
-  }
   &__text {
     color: $white;
     @include typography(1.4rem, 1.6, 0rem);
@@ -37,6 +35,10 @@
   &__contacts {
     @include typography(1.6rem, 1.5, 0rem);
     width: 19rem;
+
+    a {
+      color: inherit;
+    }
   }
 
   &__images {
